@@ -5,7 +5,9 @@ public class ApplicationEditDTO {
 	private Integer applicationId;
 	private String applicationName;
 	private String applicationTier;
+	private String existingTier;
 	private String user;
+	private String sp;
 
 	public Integer getApplicationId() {
 		return applicationId;
@@ -30,6 +32,14 @@ public class ApplicationEditDTO {
 	public void setApplicationTier(String applicationTier) {
 		this.applicationTier = applicationTier;
 	}
+
+	public String getExistingTier() { return existingTier; }
+
+	public void setExistingTier(String existingTier) { this.existingTier = existingTier; }
+
+	public String getServiceProvider() { return sp; }
+
+	public void setServiceProvider(String sp) { this.sp = sp; }
 
 	public String getUser() {
 		return user;
